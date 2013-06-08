@@ -13,6 +13,13 @@
 		D8181CC2174233180064A29E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D8181CC0174233180064A29E /* Credits.rtf */; };
 		D8181CC5174233180064A29E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8181CC4174233180064A29E /* AppDelegate.m */; };
 		D8181CC8174233180064A29E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8181CC6174233180064A29E /* MainMenu.xib */; };
+		D84F106F1757F07400DD4DE1 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D84F106C1757F07400DD4DE1 /* background.png */; };
+		D84F10701757F07400DD4DE1 /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = D84F106D1757F07400DD4DE1 /* page.png */; };
+		D84F10711757F07400DD4DE1 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = D84F106E1757F07400DD4DE1 /* placeholder.png */; };
+		D8ACDDC01757C39D00BDB1EE /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ACDDBF1757C39D00BDB1EE /* iCarousel.m */; };
+		D8ACDDC21757C48700BDB1EE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8ACDDC11757C48700BDB1EE /* QuartzCore.framework */; };
+		D8C6E1B9174790E30093FBE1 /* StatusWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6E1B7174790E30093FBE1 /* StatusWindowController.m */; };
+		D8C6E1BA174790E30093FBE1 /* Panel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E1B8174790E30093FBE1 /* Panel.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,15 @@
 		D8181CC3174233180064A29E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8181CC4174233180064A29E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8181CC7174233180064A29E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D84F106C1757F07400DD4DE1 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../background.png; sourceTree = "<group>"; };
+		D84F106D1757F07400DD4DE1 /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page.png; path = ../page.png; sourceTree = "<group>"; };
+		D84F106E1757F07400DD4DE1 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = ../placeholder.png; sourceTree = "<group>"; };
+		D8ACDDBE1757C39D00BDB1EE /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		D8ACDDBF1757C39D00BDB1EE /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		D8ACDDC11757C48700BDB1EE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D8C6E1B6174790E30093FBE1 /* StatusWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusWindowController.h; sourceTree = "<group>"; };
+		D8C6E1B7174790E30093FBE1 /* StatusWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusWindowController.m; sourceTree = "<group>"; };
+		D8C6E1B8174790E30093FBE1 /* Panel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Panel.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8ACDDC21757C48700BDB1EE /* QuartzCore.framework in Frameworks */,
 				D8181CB2174233180064A29E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +66,7 @@
 				D8181CB7174233180064A29E /* StatusBarApp */,
 				D8181CB0174233180064A29E /* Frameworks */,
 				D8181CAF174233180064A29E /* Products */,
+				D8ACDDBD1757C39D00BDB1EE /* iCarousel */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +81,7 @@
 		D8181CB0174233180064A29E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8ACDDC11757C48700BDB1EE /* QuartzCore.framework */,
 				D8181CB1174233180064A29E /* Cocoa.framework */,
 				D8181CB3174233180064A29E /* Other Frameworks */,
 			);
@@ -82,10 +101,14 @@
 		D8181CB7174233180064A29E /* StatusBarApp */ = {
 			isa = PBXGroup;
 			children = (
+				D84F10721757F07E00DD4DE1 /* Resources */,
 				D8181CC3174233180064A29E /* AppDelegate.h */,
 				D8181CC4174233180064A29E /* AppDelegate.m */,
 				D8181CC6174233180064A29E /* MainMenu.xib */,
 				D8181CB8174233180064A29E /* Supporting Files */,
+				D8C6E1B6174790E30093FBE1 /* StatusWindowController.h */,
+				D8C6E1B7174790E30093FBE1 /* StatusWindowController.m */,
+				D8C6E1B8174790E30093FBE1 /* Panel.xib */,
 			);
 			path = StatusBarApp;
 			sourceTree = "<group>";
@@ -100,6 +123,25 @@
 				D8181CC0174233180064A29E /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D84F10721757F07E00DD4DE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D84F106C1757F07400DD4DE1 /* background.png */,
+				D84F106D1757F07400DD4DE1 /* page.png */,
+				D84F106E1757F07400DD4DE1 /* placeholder.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D8ACDDBD1757C39D00BDB1EE /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				D8ACDDBE1757C39D00BDB1EE /* iCarousel.h */,
+				D8ACDDBF1757C39D00BDB1EE /* iCarousel.m */,
+			);
+			path = iCarousel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +198,10 @@
 				D8181CBC174233180064A29E /* InfoPlist.strings in Resources */,
 				D8181CC2174233180064A29E /* Credits.rtf in Resources */,
 				D8181CC8174233180064A29E /* MainMenu.xib in Resources */,
+				D8C6E1BA174790E30093FBE1 /* Panel.xib in Resources */,
+				D84F106F1757F07400DD4DE1 /* background.png in Resources */,
+				D84F10701757F07400DD4DE1 /* page.png in Resources */,
+				D84F10711757F07400DD4DE1 /* placeholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +214,8 @@
 			files = (
 				D8181CBE174233180064A29E /* main.m in Sources */,
 				D8181CC5174233180064A29E /* AppDelegate.m in Sources */,
+				D8C6E1B9174790E30093FBE1 /* StatusWindowController.m in Sources */,
+				D8ACDDC01757C39D00BDB1EE /* iCarousel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +351,7 @@
 				D8181CCD174233180064A29E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
